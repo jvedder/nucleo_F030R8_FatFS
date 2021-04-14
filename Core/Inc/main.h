@@ -68,10 +68,8 @@ void Error_Handler(void);
 #define SPI1_SCK_GPIO_Port GPIOA
 #define SPI1_MISO_Pin GPIO_PIN_6
 #define SPI1_MISO_GPIO_Port GPIOA
-#define SP1_MOSI_Pin GPIO_PIN_7
-#define SP1_MOSI_GPIO_Port GPIOA
-#define DATA_CMD_Pin GPIO_PIN_7
-#define DATA_CMD_GPIO_Port GPIOC
+#define SPI1_MOSI_Pin GPIO_PIN_7
+#define SPI1_MOSI_GPIO_Port GPIOA
 #define SD_DETECT_Pin GPIO_PIN_10
 #define SD_DETECT_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
@@ -82,16 +80,10 @@ void Error_Handler(void);
 #define SD_CS_GPIO_Port GPIOB
 #define LCD_CS_Pin GPIO_PIN_6
 #define LCD_CS_GPIO_Port GPIOB
-#define TS_SCL_Pin GPIO_PIN_8
-#define TS_SCL_GPIO_Port GPIOB
-#define TS_SDA_Pin GPIO_PIN_9
-#define TS_SDA_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-#define SD_SPI_HANDLE hspi1
 
-extern I2C_HandleTypeDef hi2c1;
-extern SPI_HandleTypeDef hspi1;
-extern UART_HandleTypeDef huart2;
+#define SD_SPI_HANDLE	hspi1
+#define UART_HANDLE		huart2
 
 /* USER CODE END Private defines */
 
